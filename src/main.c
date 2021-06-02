@@ -11,11 +11,15 @@ int main() {
 
     activeStates[MENU] = true;
 
+    bool firstflag = false;
     while (true) {
         for (int i=0; i<3; i++)
             if (activeStates[i]) {
-                STATES[i].update();
                 STATES[i].render();
+                if (!firstflag) {
+                    STATES[i].update();
+                    firstflag = true;
+                }
             }
     }
 
