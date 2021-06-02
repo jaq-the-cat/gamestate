@@ -9,7 +9,7 @@ extern GameState STATES[];
 
 int main() {
 
-    activeStates[0] = true;
+    activeStates[MENU] = true;
 
     while (true) {
         for (int i=0; i<3; i++)

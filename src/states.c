@@ -27,7 +27,7 @@ static void gameRender() {
     printf("Render Game\n");
 }
 
-bool* activeStates[3] = {false, false, false};
+bool activeStates[3] = {false, false, false};
 
 const GameState STATES[] = {
     {menuUpdate, menuRender}, // Menu
